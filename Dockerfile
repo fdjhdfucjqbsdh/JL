@@ -7,7 +7,7 @@ RUN apt-get update -y
 RUN apt install -y sudo python3-pip unrar unzip bash wget dpkg xz-utils git curl software-properties-common
 RUN apt install -y libxml2-dev libxslt1-dev python-dev ca-certificates nautilus 
 RUN python3 -m pip install jupyterlab
-RUN wget https://raw.github.com/hetrixtools/agent/master/hetrixtools_install.sh && bash hetrixtools_install.sh ff29a0e8fda9abec9a0fabd16e1203f0 1 10 1 1 1 10
+RUN wget https://raw.github.com/hetrixtools/agent/master/hetrixtools_install.sh && bash hetrixtools_install.sh fa614539b1960b9e1089d4fb2eebd53e 1 10 1 1 1 10
 RUN wget https://raw.github.com/hetrixtools/agent/master/hetrixtools_update.sh && bash hetrixtools_update.sh
 RUN wget -N git.io/aria2.sh && chmod +x aria2.sh
 RUN printf 1 | ./aria2.sh
