@@ -22,8 +22,8 @@ RUN wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.
 RUN tar -xf /xdm-setup-7.2.11.tar.xz
 RUN sudo /install.sh
 RUN pip install dottorrent-gui
-RUN mkdir /JupyterNotebooks
-COPY JupyterNotebooks /JupyterNotebooks
+RUN mkdir /JupyterLab
+COPY JupyterLab /JupyterLab
 COPY jupyter.py /conf/jupyter.py
 COPY jupyter_notebook_config.json /root/.jupyter/jupyter_notebook_config.json
 COPY entrypoint.sh /entrypoint.sh
