@@ -9,11 +9,6 @@ RUN apt-get update -y
 RUN apt install -y sudo python3-pip unrar unzip bash wget dpkg xz-utils git curl software-properties-common
 RUN apt install -y libxml2-dev libxslt1-dev python-dev
 RUN python3 -m pip install jupyterlab
-RUN curl -O 'https://raw.githubusercontent.com/developeranaz/Rclone-olderversion-Backup/main/rclone-current-linux-amd64.zip'
-RUN unzip rclone-current-linux-amd64.zip
-RUN cp /rclone-*-linux-amd64/rclone /usr/bin/
-RUN chown root:root /usr/bin/rclone
-RUN chmod 755 /usr/bin/rclone
 RUN mkdir /JupyterNotebooks
 COPY JupyterNotebooks /JupyterNotebooks
 COPY jupyter.py /conf/jupyter.py
