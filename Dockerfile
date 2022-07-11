@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 EXPOSE 8080
 
 ENV DEBIAN_FRONTEND=noninteractive
