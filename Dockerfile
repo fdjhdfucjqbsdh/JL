@@ -19,7 +19,7 @@ RUN sudo apt-add-repository "deb http://ppa.launchpad.net/ubuntu-mozilla-securit
 RUN sudo apt update
 RUN sudo apt install firefox -y
 RUN wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
-RUN tar -xf /home/akun google/xdm-setup-7.2.11.tar.xz
+RUN tar -xf /xdm-setup-7.2.11.tar.xz
 RUN sudo /install.sh
 RUN pip install dottorrent-gui
 RUN mkdir /JupyterNotebooks
