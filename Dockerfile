@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 EXPOSE 8080
 
 ENV DEBIAN_FRONTEND=noninteractive
