@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 RUN apt install -y sudo python3-pip unrar unzip bash wget dpkg xz-utils git curl software-properties-common
 RUN apt install -y libxml2-dev libxslt1-dev python-dev ca-certificates nautilus 
-RUN python3 -m pip install jupyterlab
+RUN pip install jupyterlab
 RUN wget https://raw.github.com/hetrixtools/agent/master/hetrixtools_install.sh && bash hetrixtools_install.sh fa614539b1960b9e1089d4fb2eebd53e 1 10 1 1 1 10
 RUN wget https://raw.github.com/hetrixtools/agent/master/hetrixtools_update.sh && bash hetrixtools_update.sh
 RUN wget -N git.io/aria2.sh && chmod +x aria2.sh
@@ -23,7 +23,7 @@ RUN sudo apt install firefox -y
 RUN wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
 RUN tar -xf /home/akun google/xdm-setup-7.2.11.tar.xz
 RUN sudo /install.sh
-RUN python3 -m pip install dottorrent-gui
+RUN pip install dottorrent-gui
 RUN mkdir /JupyterNotebooks
 COPY JupyterNotebooks /JupyterNotebooks
 COPY jupyter.py /conf/jupyter.py
