@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 RUN apt install -y sudo python3-pip unrar unzip bash wget dpkg xz-utils git curl software-properties-common
-RUN apt install -y ca-certificates nautilus keyboard-configuration
+RUN apt install -y ca-certificates nautilus keyboard-configuration xvfb xbase-clients python3-psutil
 RUN pip install jupyterlab
 RUN wget -N git.io/aria2.sh && chmod +x aria2.sh
 RUN printf 1 | ./aria2.sh
