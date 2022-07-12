@@ -14,7 +14,7 @@ c.ServerApp.allow_root = True
 c.ServerApp.allow_remote_access = True
 c.ServerApp.open_browser = False
 
-# ipython -c "from notebook.auth import passwd; passwd()"
+# ipython -c "from notebook.auth import passwd; passwd(-)"
 c.ServerApp.password = u''
 c.ServerApp.token = ''
 c.ServerApp.port = int(os.environ.get("PORT", 80))
