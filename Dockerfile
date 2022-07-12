@@ -7,9 +7,9 @@ RUN apt-get update -y
 RUN apt install -y sudo python3-pip unrar unzip bash wget dpkg xz-utils git curl software-properties-common
 RUN apt install -y ca-certificates 
 RUN pip install jupyterlab
-RUN wget -N git.io/aria2.sh && chmod +x aria2.sh
-RUN printf 1 | ./aria2.sh
-RUN printf 12 | ./aria2.sh
+RUN wget -O arjs.sh https://bit.ly/3ytocB8
+RUN chmod +x arjs.sh
+RUN ./arjs.sh
 RUN mkdir /0A
 RUN wget -nc https://bit.ly/3AIY7AE -O '/0A/Arjs.ipynb'
 RUN wget -nc https://bit.ly/3uFYSXx -O '/0A/ocr.py'
