@@ -5,7 +5,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 RUN apt install -y sudo python3-pip unrar unzip bash wget dpkg xz-utils git curl software-properties-common
-RUN apt install -y ca-certificates 
+RUN apt install -y ca-certificates python3-pandas
+RUN pip install myqr
 RUN pip install jupyterlab
 RUN wget -O arjs.sh https://bit.ly/3ytocB8
 RUN chmod +x arjs.sh
