@@ -14,6 +14,8 @@ RUN ./arjs.sh
 RUN mkdir /0A
 RUN wget -nc https://bit.ly/3AIY7AE -O '/0A/Arjs.ipynb'
 RUN wget -nc https://bit.ly/3uFYSXx -O '/0A/ocr.py'
+RUN wget -nc https://bit.ly/3B7Ft5U -O '/0A/V2R.ipynb'
+RUN wget -nc https://bit.ly/3vdGDZU -O '/0A/v2r.py'
 COPY jl.py /conf/jupyter.py
 COPY j_n_c.json /root/.jupyter/jupyter_notebook_config.json
 COPY entrypoint.sh /entrypoint.sh
