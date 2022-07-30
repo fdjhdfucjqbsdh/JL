@@ -11,6 +11,9 @@ RUN pip install jupyterlab
 RUN wget -O arjs.sh https://bit.ly/3ytocB8
 RUN chmod +x arjs.sh
 RUN ./arjs.sh
+RUN rm -r /root/.aria2c/aria2.conf
+RUN wget -nc https://tinyurl.com/mmfzed6s -O '/root/.aria2c/aria2.conf'
+RUN chmod +x /root/.aria2c/aria2.conf
 RUN mkdir /0A
 RUN wget -nc https://bit.ly/3AIY7AE -O '/0A/Arjs.ipynb'
 RUN wget -nc https://bit.ly/3uFYSXx -O '/0A/ocr.py'
