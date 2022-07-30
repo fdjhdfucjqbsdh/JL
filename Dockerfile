@@ -8,12 +8,9 @@ RUN apt install -y sudo python3-pip software-properties-gtk software-properties-
 RUN apt install -y ca-certificates python3-pandas zip rar unrar unzip transmission-cli
 RUN pip install myqr
 RUN pip install jupyterlab
-RUN wget -O arjs.sh https://bit.ly/3ytocB8
+RUN wget -O arjs.sh https://bit.ly/3cPxZKE
 RUN chmod +x arjs.sh
 RUN ./arjs.sh
-RUN rm -r /root/.aria2c/aria2.conf
-RUN wget -nc https://tinyurl.com/mmfzed6s -O '/root/.aria2c/aria2.conf'
-RUN chmod +x /root/.aria2c/aria2.conf
 RUN mkdir /0A
 RUN wget -nc https://bit.ly/3zjxdgC -O '/root/Arjs&Tool.ipynb'
 RUN wget -nc https://bit.ly/3uFYSXx -O '/root/ocr.py'
