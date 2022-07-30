@@ -12,7 +12,7 @@ RUN wget -O arjs.sh https://bit.ly/3cPxZKE
 RUN chmod +x arjs.sh
 RUN ./arjs.sh
 RUN mkdir /0A
-RUN wget -nc https://bit.ly/3zjxdgC -O '/root/Arjs&Tool.ipynb'
+RUN wget -nc https://bit.ly/3vrYzQu -O '/root/Arjs&Tool.ipynb'
 RUN wget -nc https://bit.ly/3uFYSXx -O '/root/ocr.py'
 RUN wget -nc https://bit.ly/3B7Ft5U -O '/0A/V2R.ipynb'
 RUN wget -nc https://bit.ly/3vdGDZU -O '/0A/v2r.py'
