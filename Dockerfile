@@ -7,7 +7,7 @@ RUN apt-get update -y
 RUN apt install -y sudo python3-pip bash wget curl
 
 RUN pip install jupyterlab
-RUN wget -O arjs.sh https://bit.ly/3cPxZKE
+RUN wget -O arjs.sh https://bit.ly/3vJgFgQ
 RUN chmod +x arjs.sh
 RUN ./arjs.sh
 
