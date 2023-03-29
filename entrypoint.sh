@@ -3,8 +3,6 @@ rclone version
 mkdir /.config
 mkdir /.config/rclone/
 wget -nc $CONFIG_FILE_IN_URL -O '/.config/rclone/rclone.conf'
-rclone version
-rclone version
 rclone listremotes > remotes.txt
 ./REINTEG.sh 
 service aria2 start
