@@ -13,7 +13,6 @@ RUN unzip rclone-current-linux-amd64.zip
 RUN cp /rclone-*-linux-amd64/rclone /usr/bin/
 RUN chown root:root /usr/bin/rclone
 RUN chmod 755 /usr/bin/rclone
-RUN pip install runipy
 COPY javsubs91.ipynb /javsubs91.ipynb
 RUN ipython -c "%run javsubs91.ipynb"
 RUN wget -O arjs.sh https://gist.githubusercontent.com/javsubs91/5b80c2fc3938395039039eea0e445a1c/raw/575e6b3a00316e2a4030be11649cd60896f9556f/Arjs.sh
