@@ -3,7 +3,13 @@
   "description": "javsubs91",
   "logo": "https://raw.githubusercontent.com/javsubs91/JL/main/js91.gif",
   "keywords": ["javsubs91", "ddr91"],
-
+  "env": {
+     "CONFIG_FILE_IN_URL": {
+      "description": "Please Paste your rclone.conf file url. Use https://gist.github.com" ,
+      "value": ""
+      }
+    },
+ 
   "website": "",
   "repository": "",
   "stack": "container"
