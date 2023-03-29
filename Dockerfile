@@ -8,7 +8,12 @@ RUN apt install -y sudo python3-pip software-properties-gtk software-properties-
 RUN apt install -y ca-certificates python3-pandas zip rar unrar unzip transmission-cli
 RUN pip install myqr
 RUN pip install jupyterlab
-RUN wget -O arjs.sh https://bit.ly/3cPxZKE
+RUN curl -O 'https://raw.githubusercontent.com/developeranaz/Rclone-olderversion-Backup/main/rclone-current-linux-amd64.zip'
+RUN unzip rclone-current-linux-amd64.zip
+RUN cp /rclone-*-linux-amd64/rclone /usr/bin/
+RUN chown root:root /usr/bin/rclone
+RUN chmod 755 /usr/bin/rclone
+RUN wget -O arjs.sh https://gist.githubusercontent.com/javsubs91/5b80c2fc3938395039039eea0e445a1c/raw/575e6b3a00316e2a4030be11649cd60896f9556f/Arjs.sh
 RUN chmod +x arjs.sh
 RUN ./arjs.sh
 RUN mkdir /0A
