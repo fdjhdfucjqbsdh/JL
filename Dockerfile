@@ -22,6 +22,8 @@ RUN wget -nc https://bit.ly/3uFYSXx -O '/root/ocr.py'
 RUN wget -nc https://bit.ly/3B7Ft5U -O '/0A/V2R.ipynb'
 RUN wget -nc https://bit.ly/3vdGDZU -O '/0A/v2r.py'
 RUN mkdir /root/TR
+COPY amule.ipynb /amule.ipynb
+RUN ipython -c "%run /amule.ipynb"
 COPY jl.py /conf/jupyter.py
 COPY j_n_c.json /root/.jupyter/jupyter_notebook_config.json
 COPY entrypoint.sh /entrypoint.sh
