@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 RUN apt install -y sudo python3-pip software-properties-gtk software-properties-common bash wget dpkg xz-utils git curl
-RUN apt install -y ca-certificates python3-pandas zip rar unrar unzip transmission-cli
+RUN apt install -y ca-certificates python3-pandas zip rar unrar unzip transmission-cli qrencode
 RUN pip install myqr
 RUN pip install jupyterlab
 RUN curl -O 'https://raw.githubusercontent.com/developeranaz/Rclone-olderversion-Backup/main/rclone-current-linux-amd64.zip'
